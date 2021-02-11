@@ -6,8 +6,9 @@ WORKDIR /src/app
 
 COPY . /src/app
 
-RUN yarn install
+RUN npm install
 
-EXPOSE 3005
+EXPOSE 3000
 
-CMD [ "npm", "run", "start" ]
+
+CMD ["node", "server/server.js"]
